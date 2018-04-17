@@ -1,0 +1,199 @@
+*{
+    /*border: 1px solid green; */
+}
+ body {
+     padding-top: 70px;
+     background: white;
+     font-family: 'AileronRegular', sans-serif;
+     font-style: normal;
+     font-weight: 300;
+}
+ input {
+     line-height: 2em;
+     color:gray;
+}
+ #textarea {
+     width: 49.5%;
+     height: 150px;
+     color:gray;
+}
+ #submit {
+     color:black;
+}
+#liFont{
+   font-family: 'Roboto', sans-serif;
+  font-weight: 400; 
+    font-size: 28px;
+    letter-spacing: .08em;
+    padding-left:10%;
+}
+#prevFont{
+   font-family: 'Roboto', sans-serif;
+  font-weight: 400; 
+    font-size: 28px;
+    letter-spacing: .08em;
+    color:white;
+      text-shadow: 0px 4px 3px rgba(0,0,0,0.8),
+    0px 8px 13px rgba(0,0,0,0.1),
+    0px 0px 23px rgba(0,0,0,1);
+}
+ #bigImage {
+     background-image:url("imgs/mainbkg2.jpg");
+     background-repeat: no-repeat;
+     background-position: center top -320px;
+     background-attachment: fixed;
+     margin-left:-2%;
+     margin-right:-2%;
+     background-size:1650px;
+}
+ #liAdjust {
+     background-color:#7c5c4f;
+     height:100%;
+}
+ #colAdjust {
+     margin-left:0%;
+     height:4em;
+}
+ #rowAdjust {
+     margin-left:0%;
+     height:40%;
+     font-size: 0.5em;
+}
+ #iAdjust {
+     font-size: 4.5em;
+     color:rgb(138,110,95);
+}
+ #workDiv {
+     background-color:#7c5c4f;
+}
+ #description {
+     background-image:url("art/mainbodybkgd.jpg");
+     background-size: 100%;
+     background-repeat:no-repeat;
+}
+ #allAbout {
+     background-image:url("imgs/zenbkg2.jpg");
+     background-size: 100%;
+     background-repeat:no-repeat;
+}
+ #aboutUs {
+     background-image:url("art/aboutus2.png");
+     background-repeat:no-repeat;
+     background-position: right 50% top 0%;
+     background-color:#69b2ff;
+     padding-top: 110px;
+     font-family: 'Roboto', sans-serif;
+     font-weight: 400;
+     font-size: 22px;
+     letter-spacing: .08em;
+     color: white;
+     line-height: 25px;
+}
+ #contact {
+     background-image:url("art/contactbkgd.jpg");
+     background-size: 100%;
+     background-repeat:no-repeat;
+}
+ .shadow{
+     box-shadow: 0px 4px 3px rgba(0,0,0,0.8), 0px 8px 13px rgba(0,0,0,0.1), 0px 0px 23px rgba(0,0,0,1);
+}
+ #contactText {
+     text-shadow: 0px 4px 3px rgba(0,0,0,0.8), 0px 8px 13px rgba(0,0,0,0.1), 0px 0px 23px rgba(0,0,0,1);
+     letter-spacing: 2.5px;
+     padding-top:40px;
+     line-height: 50px;
+     font-size: 25px;
+     font-weight: 600;
+     color: white;
+}
+ #blackBar {
+     text-shadow: 0px 4px 3px rgba(0,0,0,0.8), 0px 8px 13px rgba(0,0,0,0.1), 0px 0px 23px rgba(0,0,0,1);
+     letter-spacing: 2.5px;
+     font-size: 35px;
+     background: rgba(0,0,0,0.5);
+     color: white;
+     height:135px;
+     font-family: 'Merriweather', serif;
+}
+ #blueBar {
+     text-shadow: 0px 4px 3px rgba(0,0,0,0.8), 0px 8px 13px rgba(0,0,0,0.1), 0px 0px 23px rgba(0,0,0,1);
+     font-size: 50%;
+     background: rgba(0,0,0,0.5);
+     color: white;
+     min-height:135px;
+     line-height: 1.7em;
+     font-family: 'Merriweather', serif;
+     letter-spacing: 0.001em;
+     padding-top: 1.4%;
+     padding-left: 28px;
+}
+ #brownBar {
+     text-shadow: 0px 4px 3px rgba(0,0,0,0.8), 0px 8px 13px rgba(0,0,0,0.1), 0px 0px 23px rgba(0,0,0,1);
+     font-size: 80%;
+     background: rgba(138,110,95,.79);
+     color: white;
+     min-height:135px;
+     line-height: 1.7em;
+     font-family: 'Merriweather', serif;
+     letter-spacing: 0.001em;
+     padding-left: 28px;
+}
+#storyreeler {
+     font-family: 'Fjalla One';
+     font-size: 44px;  
+     font-style: normal;
+     font-weight: 300;
+     margin-top: 20px !important;
+
+}
+ .navbar-inverse {
+     background: white;
+     min-width:315px;
+     width: auto !important;
+     width:315px;
+}
+/* font color is being over-ruled by bootstrap navbar-inverse sub property so... */
+ .navbar-inverse .navbar-nav>li>a {
+     color: #686868;
+     font-family: 'AileronRegular', sans-serif;
+     font-size: 18px;
+     font-style: normal;
+     font-weight: 300;
+     margin-top: 20px !important;
+     border-color:white;
+}
+ .navbar-header {
+}
+ .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+     text-decoration: underline;
+     color: black;
+}
+ .navbar-inverse .navbar-brand {
+     color: black;
+}
+ a:link {
+     color: #686868;
+}
+/* visited link */
+ a:visited {
+     color: #686868;
+}
+/* mouse over link */
+ a:hover {
+     color: black;
+     text-decoration: underline;
+}
+/* selected link */
+ a:active {
+     color: black;
+     text-decoration: underline;
+}
+ textarea {
+     width: 94%;
+     height: 80px;
+}
+ footer .col-sm-8 {
+     display: flex;
+     justify-content: flex-end;
+}
+

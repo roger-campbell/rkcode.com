@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>lightSlider Demo</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="description" content="">
+      <link rel="stylesheet"  href="src/css/lightslider.css"/>
+      <style>
+         ul{
+         list-style: none outside none;
+         padding-left: 0;
+         margin: 0;
+         }
+         .demo .item{
+         margin-bottom: 60px;
+         }
+         .content-slider li{
+         background-color: #ed3020;
+         text-align: center;
+         color: #FFF;
+         }
+         .content-slider h3 {
+         margin: 0;
+         padding: 70px 0;
+         }
+         .demo{
+         width: 800px;
+         }
+      </style>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <script src="src/js/lightslider.js"></script> 
+      <script src="scripts.js"></script> 
+      <script>
+         $(document).ready(function() {
+         $("#content-slider").lightSlider({
+                   loop:true,
+                   keyPress:true
+               });
+               $('#image-gallery').lightSlider({
+                   gallery:true,
+                   item:1,
+                   thumbItem:9,
+                   slideMargin: 0,
+                   speed:500,
+                   auto:true,
+                   loop:true,
+                   onSliderLoad: function() {
+                       $('#image-gallery').removeClass('cS-hidden');
+                   }  
+               });
+         });
+      </script>
+      <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+      <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Fjalla One' rel='stylesheet'>
+      <!-- WE CREATED THIS to adjust terrible bootstrap settings -->
+      <link rel="stylesheet" type="text/css" href="gallery.css">
+   </head>
+   <body>
+     
+      <div class="item">
+         <br/>
+         <ul id="content-slider" class="content-slider"  >
+            <li style="background-color:#181818;">
+               <!-- this establishes the rest of the slider sizes -->
+               <img onclick="chgImg(this.src)" src="art/sketchbook_01.jpg" width="50%" height="100%" frameborder="0" allowfullscreen></img>
+            </li>
+            <li style="background-color:#181818; height:100%">
+               <img onclick="chgImg(this.src)" src="art/sketchbook_02.jpg" style="width:auto; height:auto; max-width:100%; max-height:100%;" frameborder="0" allowfullscreen></img>
+            </li>
+            <li style="background-color:#181818; height:100%">
+               <img onclick="chgImg(this.src)" src="art/sketchbook_03.png" style="width:auto; height:auto; max-width:100%; max-height:100%; margin-top:5%;" frameborder="0" allowfullscreen></img>
+            </li>
+            <li style="background-color:#181818; height:100%">
+               <img onclick="chgImg(this.src)" src="art/sketchbook_04.jpg" style="width:auto; height:auto; max-width:100%; max-height:100%;" frameborder="0" allowfullscreen></img>
+            </li>
+            <li style="background-color:#181818; height:100%"> 
+               <h3 style="width:auto; height:auto; max-width:100%; max-height:100%;" frameborder="0" allowfullscreen>IMG</h3>
+            </li>
+            <li style="background-color:#181818; height:100%">
+               <h3 style="width:auto; height:auto; max-width:100%; max-height:100%;" frameborder="0" allowfullscreen>IMG</h3>
+            </li>
+         </ul>
+      </div>
+
+      <!-- This establishes the JS involved for stuff like drop down menus becuase by default it wont work -->
+      <script src="bootstrap.js"></script>
+      <script type="text/javascript" src="scripts.js"></script>
+   </body>
